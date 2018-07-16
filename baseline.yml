@@ -1,0 +1,12 @@
+---
+# file: webservers.yml
+- hosts: all
+  vars:
+  roles:
+    - ntp
+    - logrotate
+  tasks:
+    - name: "all complete"
+      debug:
+        msg: all complete
+
